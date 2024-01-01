@@ -1,9 +1,8 @@
 #include <iostream>
 #include <map>
+#include <ranges>
 
 #include "ConsoleMenu.hpp"
-
-#include <ranges>
 
 void Menu::Init(const std::string& menu_path)
 {

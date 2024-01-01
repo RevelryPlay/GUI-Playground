@@ -20,8 +20,8 @@ public:
     Menu(std::string name, std::string desc) : Name(std::move(name)), Description(std::move(desc)) {}
     std::string Name;
     std::string Description;
-    inline void AddMenu(Menu const& m) { this->submenus[m.Name] = m; }
-    inline void AddAction(MenuItem const& m) { this->actions[m.Name] = m; }
+    void AddMenu(Menu const& m) { this->submenus[m.Name] = m; }
+    void AddAction(MenuItem const& m) { this->actions[m.Name] = m; }
     void Init(const std::string&);
 };
 
