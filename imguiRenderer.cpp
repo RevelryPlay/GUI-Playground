@@ -1,5 +1,3 @@
-#pragma once
-
 // Dear ImGui: standalone example application for GLFW + OpenGL 3, using programmable pipeline
 // (GLFW is a cross-platform general purpose library for handling windows, inputs, OpenGL/Vulkan/Metal graphics context creation, etc.)
 
