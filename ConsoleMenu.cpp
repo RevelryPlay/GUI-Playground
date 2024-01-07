@@ -8,10 +8,10 @@ void Menu::GetActions()
 {
     if (!this->submenus.empty())
     {
-        std::cout << "Submenus: ";
+        std::cout << "Submenus: \n";
         for (const auto& name : this->submenus | std::views::keys)
         {
-            std::cout << name << " ";
+            std::cout << " " << name << ": " << this->submenus[name].Description << '\n';
         }
         std::cout << '\n';
     }

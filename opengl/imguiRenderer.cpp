@@ -216,4 +216,3 @@ struct ImguiRenderer
         return 0;
     }
 };
-

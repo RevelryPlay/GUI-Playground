@@ -1,0 +1,15 @@
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 400px;
+    default-font-size: 24px;
+
+    // Declare an alias that exposes the label's text property to C++
+    in property my_label <=> label.text;
+
+    label := Text {
+        y: parent.height / 2;
+        x: (parent.width / 2) - 50px;
+        text: "Hello, world";
+        color: white;
+    }
+}

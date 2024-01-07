@@ -1,5 +1,4 @@
-#ifndef CONSOLE_MENU_HPP
-#define CONSOLE_MENU_HPP
+#pragma once
 
 #include <string>
 #include <map>
@@ -41,5 +40,3 @@ public:
     using Menu::Menu;
     void Init() { this->Menu::Init(""); }
 };
-
-#endif
