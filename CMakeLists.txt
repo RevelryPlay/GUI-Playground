@@ -65,7 +65,7 @@ if (OPTS_USE_SLINT)
     FetchContent_MakeAvailable(Slint)
 
     target_link_libraries(${PROJECT_NAME} PRIVATE Slint::Slint)
-    slint_target_sources(${PROJECT_NAME} slint/demo.slint)
+    slint_target_sources(${PROJECT_NAME} slint/MainWindow.slint)
     # On Windows, copy the Slint DLL next to the application binary so that it's found.
     if (WIN32)
         add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:gui-playground> $<TARGET_FILE_DIR:gui-playground> COMMAND_EXPAND_LISTS)

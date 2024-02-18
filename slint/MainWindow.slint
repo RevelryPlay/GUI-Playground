@@ -1,12 +1,13 @@
 import { Button, HorizontalBox, VerticalBox } from "std-widgets.slint";
 
 export component MainWindow inherits Window {
-property <int> counter1: 0;
-property <int> counter2: 0;
+    property <int> counter1: 0;
+    property <int> counter2: 0;
 
     width: 400px;
-    height: 400px;
-    default-font-size: 24px;
+    height: 120px;
+    default-font-size: 18px;
+    title: "Hello, world";
 
     // Declare an alias that exposes the label's text property to C++
     in property my_label <=> label.text;
@@ -19,7 +20,7 @@ property <int> counter2: 0;
 
         horizontalBox := HorizontalBox {
             width: parent.width;
-            height: 50px;
+            height: 40px;
             spacing: 20px;
             padding: 0px;
 
@@ -27,6 +28,7 @@ property <int> counter2: 0;
                 text: "Button 1 - " + counter1;
                 width: 170px;
                 height: parent.height;
+                primary: true;
                 clicked => {
                     counter1 += 1;
                 }
@@ -44,7 +46,6 @@ property <int> counter2: 0;
 
         label := Text {
             text: "Hello, world";
-            color: white;
         }
     }
 }

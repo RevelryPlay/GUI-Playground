@@ -1,6 +1,6 @@
 #pragma once
 
-#include "demo.h"
+#include "MainWindow.h"
 
 struct SlintRenderer {
     static void RenderSlintDemo();
