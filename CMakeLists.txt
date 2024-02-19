@@ -68,6 +68,6 @@ if (OPTS_USE_SLINT)
     slint_target_sources(${PROJECT_NAME} slint/MainWindow.slint)
     # On Windows, copy the Slint DLL next to the application binary so that it's found.
     if (WIN32)
-        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:gui-playground> $<TARGET_FILE_DIR:gui-playground> COMMAND_EXPAND_LISTS)
+        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:GUI_Playground> $<TARGET_FILE_DIR:GUI_Playground> COMMAND_EXPAND_LISTS)
     endif()
 endif ()

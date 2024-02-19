@@ -45,6 +45,12 @@ int main()
 
 #endif
 
+    if (main.GetActionLength() == 0)
+    {
+        std::cout << "No renderers available.\nPlease enable at least one rendering system in CMakeLists.txt" << std::endl;
+        return 0;
+    }
+
     main.Init();
 
     return 0;

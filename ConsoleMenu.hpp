@@ -30,6 +30,7 @@ public:
     void AddAction(MenuItem const& m) { this->actions[m.Name] = m; }
 
     void GetActions();
+    [[nodiscard]] int GetActionLength() const { return this->actions.size(); }
 
     void Init(const std::string&);
 };
